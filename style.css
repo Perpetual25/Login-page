@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open sans";
+    color: white;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("./bg-img/bg-img7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.form-con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    width: 400px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow:  6px 6px 30px #383838;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+span{
+    display: flex;
+    gap: 10px;
+}
+.contain input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    outline: #222;
+    margin: 1em 0;
+}
+.text{
+    /* border: 2px solid rgb(32, 30, 30);  */
+    opacity: .1;
+}
+.text:hover{
+    border: 2px solid black;
+    opacity: .9;
+}
+
+.contain input[type="submit"]{
+    border: none ;
+    background: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .2s ease;
+}
+.contain input[type="submit"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .2s ease;
+}
+.link a:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:680px){
+    section{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url("./bg-img/bg-img 8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }    
+
+    .form-con{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+        width: 300px;
+        padding: 50px 30px;
+        border-radius: 20px;
+        box-shadow:  6px 6px 30px #383838;
+    }
+    
+}
